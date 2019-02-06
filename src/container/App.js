@@ -12,13 +12,8 @@ class App extends Component {
 
   componentDidMount() {
     this.getArtists();
-    //this.getAlbums();
   }
-  // getAlbums() {
-  //   fetch("https://coverartarchive.org/release/{mbid}/front")
-  //     .then(response => response.json())
-  //     .then(data => this.setState({ albumlist: data.images }));
-  // }
+
   getArtists() {
     fetch("http://musicbrainz.org/ws/2/artist?query=artists&limit=25&fmt=json")
       .then(response => response.json())
