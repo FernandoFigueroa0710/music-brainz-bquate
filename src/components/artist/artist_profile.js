@@ -8,9 +8,9 @@ const ArtistProfile = ({ id, album, name, score, description }) => {
         alt="artist"
         src={`https://coverartarchive.org/release/${album}/front`}
       />
-      <h3>Socore:{score}</h3>
+      <p>score:{score}</p>
       <br />
-      <h2>Description:{description}</h2>
+      <p>Description:{description}</p>
     </div>
   );
 };
